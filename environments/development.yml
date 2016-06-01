@@ -1,0 +1,9 @@
+version: '2'
+services:
+  server:
+    build: ../services/bot
+    container_name: flechette
+    ports:
+      - "9090:9090"
+    volumes:
+      - ..:/var/www/flechette

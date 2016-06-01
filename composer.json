@@ -1,0 +1,25 @@
+{
+  "name": "monsieurbiz/coffee-shop",
+  "type": "app",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/jacquesbh/php-slack-bot"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/jacquesbh/php-slack"
+    }
+  ],
+  "require": {
+    "voryx/thruway": "dev-master",
+    "jclg/php-slack-bot": "dev-develop"
+  },
+  "autoload": {
+    "psr-4": {
+      "MonsieurBiz\\FlechetteBot\\": "apps/"
+    }
+  }
+}
