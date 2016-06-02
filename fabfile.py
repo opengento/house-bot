@@ -39,7 +39,6 @@ def prod(filters=False):
 @task
 def deploy(branch=False,tag=False):
     """ Deploy """
-    print env
     fetch()
     checkout_branch(branch)
     checkout_tag(tag)

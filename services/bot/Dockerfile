@@ -25,6 +25,4 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/bin --fil
 # Services
 COPY bot/run.sh /etc/service/bot/run
 
-RUN echo "youpi"
-
 CMD ["/usr/bin/runsvdir", "-P", "/etc/service"]
