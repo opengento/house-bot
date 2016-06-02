@@ -1,6 +1,6 @@
 <?php
 
-namespace MonsieurBiz\FlechetteBot\Bot;
+namespace Opengento\HouseBot\Bot;
 
 use PhpSlackBot\Bot as BaseBot;
 
@@ -14,7 +14,7 @@ class Bot extends BaseBot
      */
     public function initCommands()
     {
-        $this->loadCatchAllCommand(new Command\FlechetteCommand());
+        $this->loadCatchAllCommand(new Command\DartsCommand());
 
         return $this;
     }

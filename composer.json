@@ -1,5 +1,5 @@
 {
-  "name": "monsieurbiz/coffee-shop",
+  "name": "opengento/house-bot",
   "type": "app",
   "license": "MIT",
   "minimum-stability": "dev",
@@ -19,7 +19,7 @@
   },
   "autoload": {
     "psr-4": {
-      "MonsieurBiz\\FlechetteBot\\": "apps/"
+      "Opengento\\HouseBot\\": "apps/"
     }
   }
 }
