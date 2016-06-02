@@ -8,14 +8,8 @@ Put your bot's tocken into the `./TOKEN` file :kissing_closed_eyes::
 echo YOUR-TOKEN > TOKEN
 ```
 
-Get the dependencies:
+Then run the bot with a simple command line:
 
 ```bash
-composer install
-```
-
-Then run the bot using a simple command line:
-
-```bash
-php bin/bot.php
+make dev-up
 ```
