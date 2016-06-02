@@ -15,7 +15,7 @@ RUN \
     echo "deb-src http://packages.dotdeb.org jessie all" >> /etc/apt/sources.list.d/dotdeb.list && \
     wget http://www.dotdeb.org/dotdeb.gpg -O- -q | apt-key add - && \
     apt-get update && \
-    apt-get install -y php7.0-cli php7.0-curl && \
+    apt-get install -y php7.0-cli php7.0-curl php7.0-sqlite3 && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /etc/apt/sources.list.d/*
 
