@@ -21,6 +21,8 @@ class FlechetteCommand extends BaseCommand
 
     protected function execute($message, $context)
     {
+        $smileys = [':joy:', ':smile:', ':heart_eyes:', ':fu:'];
+
         // Only #flechette channel
         $flechetteChannel = 'C1DBXF9GT';
         if (!isset($message['channel'], $message['text']) || $message['channel'] !== $flechetteChannel) {
@@ -49,7 +51,6 @@ HELP;
             $db      = $this->_openDb();
             $db->query("DELETE FROM players;");
             $db->close();
-            $smileys = [':joy:', ':smile:', ':heart_eyes:', ':fu:'];
             $m = sprintf(
                 "Ok <@%s>, j'ai reset la table des scores pour toi, juste pour toi %s",
                 $message['user'],
@@ -75,6 +76,7 @@ HELP;
             $m = sprintf(
                 "Ok <@%s>, j'ai ajouté %d point(s) à <@%s> ! %s",
                 $message['user'],
+                $matches[1],
                 $matches[2],
                 $smileys[array_rand($smileys)]
             );
