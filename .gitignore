@@ -1,3 +1,4 @@
 vendor/
 db/
 TOKEN
+fabfile.pyc
